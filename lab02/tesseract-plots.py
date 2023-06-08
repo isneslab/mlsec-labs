@@ -4,13 +4,17 @@ import datetime
 import numpy as np
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction import DictVectorizer
-from tesseract import evaluation, temporal, metrics, mock, viz, loader
+from tesseract import evaluation, temporal 
+# , metrics, mock, viz, loader
 
 os.environ["PATH"] += os.pathsep + '/Library/TeX/texbin'
 
 ## Loading features
 
 def load_dataset(dataset_path):
+    """
+    The function to load features in the Tesseract dataset. Please note that you have to parametrize the names of the files opened, to load the right file. 
+    """
     print(f'Loading dataset from {dataset_path}')
 
     with open('{}-X-updated-reduced-10k.json'.format(dataset_path), 'r') as f:
@@ -45,7 +49,7 @@ def load_dataset(dataset_path):
 
     return X, y, time_index, feature_names, T
 
-X, y, time_index, feature_names, T = load_dataset('../extended-features/extended-features')
+X, y, time_index, feature_names, T = load_dataset('/Users/fabio/work/mlsec-malware-class/labs/extended-features/extended-features')
 
 # Partition dataset
 splits = temporal.time_aware_train_test_split(
@@ -69,8 +73,11 @@ plot(results['precision'], marker='o', color=pendleyellow)
 plot(results['recall'], marker='o', color='red')
 plot(results['f1'], marker='o', color=pendleblue)
 legend(['Precision', 'Recall', 'F1'])
-xlim([0,23])
+# You may use xlim to limit the months
+# xlim([0,23])
 xlabel('Testing period (month)')
 ylabel('Performance')
 grid(axis = 'y')
+
+# you can use "savefig" to save the figures in png, or add comparisons. 
 show()
