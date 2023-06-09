@@ -5,12 +5,10 @@ import numpy as np
 from sklearn.svm import LinearSVC
 from sklearn.feature_extraction import DictVectorizer
 from tesseract import evaluation, temporal 
-# , metrics, mock, viz, loader
 
 os.environ["PATH"] += os.pathsep + '/Library/TeX/texbin'
 
 ## Loading features
-
 def load_dataset(dataset_path):
     """
     The function to load features in the Tesseract dataset. Please note that you have to parametrize the names of the files opened, to load the right file. 
