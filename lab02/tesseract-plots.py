@@ -15,11 +15,11 @@ def load_dataset(dataset_path):
     """
     print(f'Loading dataset from {dataset_path}')
 
-    with open('{}-X-updated-reduced-10k.json'.format(dataset_path), 'r') as f:
+    with open('{}-X.json'.format(dataset_path), 'r') as f:
         X = json.load(f)
 
     print('Loading labels...')
-    with open('{}-y-updated.json'.format(dataset_path), 'rt') as f:
+    with open('{}-y.json'.format(dataset_path), 'rt') as f:
         y = json.load(f)
 
     print('Loading timestamps...')
