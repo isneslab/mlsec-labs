@@ -7,7 +7,7 @@ Learn how to use notebooks, and compute Precision, Recall, F1-Score and ROC Curv
 ## Lab 02: Use Tesseract-ML for time-aware evaluations
 
 There are four major versions of the dataset: 
-1. `extended-features-X` with `extended-features-y-updated`: Original dataset of TESSERACT (2014--2016), extended with the Transcendent dataset (2017--2018), with features re-extracted.
+1. `extended-features-X` with `extended-features-y`: Original dataset of TESSERACT (2014--2016), extended with the Transcendent dataset (2017--2018), with features re-extracted.
 2. `extended-features-X-updated` with `extended-features-y-updated`: Same as (1) but with updated labels: VirusTotal was queried again, and the labels have been updated. 
 3. `extended-features-X-updated-reduced-1k` and `extended-features-X-updated-reduced-1k`: Variant of dataset (2) with a pre-applied feature reduction of 10k and 1k features.
 
