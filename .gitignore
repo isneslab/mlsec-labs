@@ -1,0 +1,5 @@
+libs/env310
+libs/tesseract-ml-release
+*.ipynb_checkpoint*
+*__pycache__*
+datasets/drebin/*
