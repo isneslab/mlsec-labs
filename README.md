@@ -1,5 +1,13 @@
 # ML Security Labs
 
+## Setup
+
+It is better to use Python 3.10 as we are still figuring out a compatibility with the Tesseract library.
+
+I would also advise to create a Python virtual environment for these labs, using Python 3.10: see [here](https://docs.python.org/3/library/venv.html) for a guide on virtual environments. 
+
+## Labs overview
+
 This github workspace contains some example to get acquainted with the use of Machine Learning for Systems Security and Malware Detection. 
 
 * **Lab 01: Introduction**. This lab is a warmer to introduce on the use of notebooks, and to compute the main performance metrics. 
@@ -8,4 +16,14 @@ This github workspace contains some example to get acquainted with the use of Ma
 
 * **Lab 03: Adversarial Attacks**. A simple weight-driven attack for the linear SVM classifier on DREBIN feature space.
 
-* **Lab 04: Sampling Bias**. 
+* **Lab 04: Sampling Bias**. In this exercise, you will see how training on apps from different marketplaces, how this affects results.
+
+## Tesseract Library
+
+In case you need to do time-aware evaluations with: 
+
+* [Tesseract Library](https://github.com/s2labres/tesseract-ml-release)
+
+You can refer to this publication:
+
+* Feargus Pendlebury, Fabio Pierazzi, Roberto Jordaney, Johannes Kinder, and Lorenzo Cavallaro , [TESSERACT: Eliminating experimental bias in malware classification across space and time](https://fabio.pierazzi.com/assets/pdf/tesseract.pdf), In Proc. of USENIX Security Symposium, 2019
