@@ -10,7 +10,7 @@ I would also advise to create a Python virtual environment for these labs, using
 
 This github workspace contains some example to get acquainted with the use of Machine Learning for Systems Security and Malware Detection. 
 
-* **Lab 01: Introduction**. This lab is a warmer to introduce on the use of notebooks, and to compute the main performance metrics. 
+* **Lab 01: Malware detection with Machine Learning**. This lab is a warmer to introduce on the use of notebooks, and to compute the main performance metrics. 
 
 * **Lab 02: Time-aware evaluations**. This lab introduces the use of time-aware evaluations. 
 
