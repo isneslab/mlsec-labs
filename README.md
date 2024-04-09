@@ -18,6 +18,8 @@ This github workspace contains some example to get acquainted with the use of Ma
 
 * **Lab 04: Sampling Bias**. In this exercise, you will see how training on apps from different marketplaces, how this affects results.
 
+The `datasets` folder contains simple datasets and the instruction to download a larger dataset based on the DREBIN (NDSS 2014) feature space.
+
 ## Tesseract Library
 
 In case you need to do time-aware evaluations with: 
@@ -27,3 +29,15 @@ In case you need to do time-aware evaluations with:
 You can refer to this publication:
 
 * Feargus Pendlebury, Fabio Pierazzi, Roberto Jordaney, Johannes Kinder, and Lorenzo Cavallaro , [TESSERACT: Eliminating experimental bias in malware classification across space and time](https://fabio.pierazzi.com/assets/pdf/tesseract.pdf), In Proc. of USENIX Security Symposium, 2019
+
+To install, create a Python 3.10 environment. If the instructions of the repo do now work, consider trying:
+```bash
+python -m build
+```
+
+To register the virtual environment on a Python notebook:
+```bash
+python -m ipykernel install --user --name <env-name>
+```
+where the <env-name> variable matches the name of the environment. 
+
