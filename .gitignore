@@ -1,3 +1,4 @@
+.DS_store*
 libs/env310
 libs/tesseract-ml-release
 *.ipynb_checkpoint*
