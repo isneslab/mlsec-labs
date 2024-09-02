@@ -1,6 +1,23 @@
 from tqdm.notebook import tqdm
 import matplotlib.pyplot as plt
 
+# ################
+## Exercise 1
+# ################
+
+# Attacking a single point
+tp_mask = (y_pred==1.0) & (y_test==1.0)
+X_tps = X_test[tp_mask,:]
+
+test_point = X_tps[0].toarray()
+print('Before attack: {}'.format(clf.predict(test_point)))
+top_10_benign_idx = np.argsort(clf.coef_[0])[:10]
+test_point[:, top_10_benign_idx] = 1.0
+print('After attack: {}'.format(clf.predict(test_point)))
+
+# ################
+## Exercise 2
+# ################
 
 asr = []
 for top_n in tqdm(range(11)):
